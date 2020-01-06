@@ -23,16 +23,22 @@
         // Regular 
         console.log('Hello');
 
-        // Interpolated, old way before ES6
+        // Interpolated, old way before ES6, '%s' for the variable you want to replace, followed by the variable in quotes
         console.log('Hello I am a %s string', '💩')
         // new way using back ticks
         console.log(`Hello I am a 💩 string`)
 
-        // Styled
+        // Styled, '%c' in the first section, followed by the styles
+        console.log('%c I am some great text', 'font-size:50px; background:red; text-shadow:10px 10px 0 blue')
 
-        // Warning!
+        // Warning!, adds a warning and gives you a stack trace, changes the appearance in the console.
+        console.warn('OH NOO!')
 
-        // Info
+        // Error :/, adds an error and gives you a stack trace, changes the appearance in the console.
+        console.error('OH SHIT!')
+
+        // Info, just changes the appearance in the console
+        console.info('Crocodiles eat 3-4 people per year!');
 
         // Testing
 
